@@ -1,0 +1,42 @@
+{
+  "name": "@suitest/translate",
+  "version": "4.3.3",
+  "description": "A module that translate Suitest server messages to human readable strings",
+  "homepage": "https://suite.st/",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuitestAutomation/suitest.git",
+    "directory": "packages/translate"
+  },
+  "keywords": [
+    "suitest"
+  ],
+  "bugs": {
+    "url": "https://github.com/SuitestAutomation/suitest/issues"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/",
+    "commonjs/"
+  ],
+  "scripts": {
+    "build": "npx rimraf dist && npx tsc -p tsconfig.json && node ../../compile.js",
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "prepublishOnly": "npm run coverage && npm run build"
+  },
+  "dependencies": {
+    "@suitest/smst": "^4.2.2",
+    "@suitest/types": "^4.3.3"
+  },
+  "devDependencies": {
+    "@suitest/smst-to-html": "^4.2.2",
+    "@suitest/smst-to-text": "^4.2.2"
+  }
+
+,"_resolved": "https://registry.npmjs.org/@suitest/translate/-/translate-4.3.3.tgz"
+,"_integrity": "sha512-nZmQgCN7tnalM85Pa2Ft4Y+0TNouRky9qqcx/3G14BohZGSvkluaSIszO8rMR4kzWqEXbdASVPiSfgDH0F70Lg=="
+,"_from": "@suitest/translate@4.3.3"
+}
