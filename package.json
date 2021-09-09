@@ -46,7 +46,8 @@
     "suitest.js",
     "CODE_OF_CONDUCT.md",
     "CONTRIBUTING.md",
-    "LICENSE"
+    "LICENSE",
+    "@suitest"
   ],
   "husky": {
     "hooks": {
