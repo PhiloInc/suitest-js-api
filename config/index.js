@@ -16,21 +16,21 @@ const sentryDsn = 'https://1f74b885d0c44549b57f307733d60351:dd736ff3ac994104ab66
 const DEFAULT_TIMEOUT = 2000;
 
 const overridableFields = [
-	'tokenKey', 'tokenPassword', 'testPackId', 'concurrency', // launcher automated
-	'username', 'password', 'orgId', 'deviceId', 'appConfigId', 'inspect', 'inspectBrk', // launcher intaractive
-	'logLevel', 'logDir', 'timestamp', 'configFile', 'disallowCrashReports', 'defaultTimeout', // launcher common
+	'tokenId', 'tokenPassword', 'concurrency', 'preset', 'presets', 'deviceId', 'appConfigId', 'inspect', 'inspectBrk',
+	'logLevel', 'logDir', 'timestamp', 'configFile', 'disallowCrashReports', 'defaultTimeout', 'screenshotDir',
+	'includeChangelist',
 ];
 
 const configurableFields = ['logLevel', 'disallowCrashReports', 'defaultTimeout'];
 
 const main = Object.freeze({
-	apiUrl: 'https://the.suite.st/api/public/v3',
+	apiUrl: 'https://the.suite.st/api/public/v4',
 	disallowCrashReports: false,
 	logLevel: logLevels.normal,
 	sentryDsn,
 	timestamp: timestamp.default,
 	defaultTimeout: DEFAULT_TIMEOUT,
-	wsUrl: 'wss://the.suite.st/api/public/v3/socket',
+	wsUrl: 'wss://the.suite.st/api/public/v4/socket',
 });
 
 const test = Object.freeze({
