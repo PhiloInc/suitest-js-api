@@ -48,7 +48,9 @@
     "CONTRIBUTING.md",
     "LICENSE",
     "@suitest",
-    "@suitest/translate"
+    "@suitest/translate",
+    "@suitest/translate/dist",
+    "@suitest/translate/package.json"
   ],
   "husky": {
     "hooks": {
