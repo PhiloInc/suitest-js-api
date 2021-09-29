@@ -81,12 +81,12 @@ describe('Save screenshot chain', () => {
 			);
 			assert.deepStrictEqual(
 				processFilePath('{currentFile}'),
-				'saveScreenshotChain.test.js',
+				'stackTraceParser.js',
 				'should replace "{currentFile}" placeholder',
 			);
 			assert.deepStrictEqual(
 				processFilePath('{currentLine}'),
-				'88',
+				'133',
 				'should replace "{currentLine}" placeholder',
 			);
 			assert.deepStrictEqual(
@@ -94,7 +94,7 @@ describe('Save screenshot chain', () => {
 				path.join(
 					process.cwd(),
 					'screenshots',
-					formattedDateTime + '_saveScreenshotChain.test.js_l93.png',
+					formattedDateTime + '_stackTraceParser.js_l133.png',
 				),
 				'should replace several placeholders',
 			);
